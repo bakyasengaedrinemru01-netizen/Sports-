@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0e0c">
+  <meta name="description" content="EDRINE SPORTS football scores, fixtures, results and league tables.">
+  <title>EDRINE SPORTS — Football Centre</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="EDRINE SPORTS home"><span class="brand-mark">M</span><span>MATCH<span class="muted">WIRE</span></span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+  <nav id="nav">
+    <a href="#scores">Scores</a><a href="#fixtures">Fixtures</a><a href="#tables">Tables</a><a href="#teams">Teams</a>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow"><i></i> YOUR FOOTBALL CENTRE</div>
+    <h1>Every match.<br><span>Every moment.</span></h1>
+    <p>Follow fixtures, results, teams and league standings in one place.</p>
+    <a class="primary" href="#scores">Explore matches <span>→</span></a>
+    <div class="hero-note">Demo mode · Scores shown are sample data</div>
+  </section>
+
+  <section class="section" id="scores">
+    <div class="section-head"><div><div class="eyebrow">MATCH CENTRE</div><h2>Match scores</h2></div><span class="pill">SAMPLE DATA</span></div>
+    <div class="filters">
+      <button class="filter active" data-filter="All">All</button>
+      <button class="filter" data-filter="Premier League">Premier League</button>
+      <button class="filter" data-filter="La Liga">La Liga</button>
+      <button class="filter" data-filter="Champions League">Champions League</button>
+    </div>
+    <div id="scoreList" class="match-grid"></div>
+  </section>
+
+  <section class="section" id="fixtures">
+    <div class="eyebrow">COMING UP</div><h2>Upcoming fixtures</h2>
+    <div class="table-wrap"><table><thead><tr><th>Competition</th><th>Match</th><th>Date</th><th>Kick-off</th></tr></thead>
+    <tbody id="fixtureRows"></tbody></table></div>
+  </section>
+
+  <section class="section" id="tables">
+    <div class="eyebrow">LEAGUE RANKINGS</div><h2>Premier League table</h2>
+    <div class="table-wrap"><table><thead><tr><th>#</th><th>Club</th><th>Played</th><th>GD</th><th>Points</th></tr></thead>
+    <tbody id="standingRows"></tbody></table></div>
+    <p class="disclaimer">Illustrative table for the app preview. It is not an official live league table.</p>
+  </section>
+
+  <section class="section" id="teams">
+    <div class="eyebrow">FIND YOUR CLUB</div><h2>Teams</h2>
+    <input id="teamSearch" class="search" type="search" placeholder="Search a team..." aria-label="Search teams">
+    <div id="teamList" class="team-grid"></div>
+  </section>
+</main>
+<footer><div class="brand"><span class="brand-mark">M</span><span>MATCH<span class="muted">WIRE</span></span></div><p>Football, brought together.</p><small>Demo edition · Match information is sample content, not live results.</small></footer>
+<script src="app.js"></script>
+</body>
+</html>
